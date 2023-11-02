@@ -1,0 +1,43 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.6rem 0 2.4rem;
+  column-gap: 0.8rem;
+  font-size: 1.3rem;
+  line-height: 1.38;
+  color: rgba(var(--color-foreground), 1);
+  font-weight: 500;
+}
+
+.breadcrumb .icon-breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: rgba(var(--color-foreground), 1);
+}
+
+.breadcrumb a:active {
+  color: rgba(var(--color-foreground), 1);
+}
+
+.breadcrumb svg {
+  transform: rotate(-90deg);
+  width: 8px;
+}
+
+.breadcrumb a,
+.breadcrumb span {
+  white-space: nowrap;
+}
+
+.breadcrumb span:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

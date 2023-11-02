@@ -1,0 +1,79 @@
+
+{%- capture sizes -%}
+  (min-width: {{ settings.page_width }}px) 432px, (min-width: 990px) 432px, (min-width: 750px) calc((100vw - 11.5rem) / 2), 375px
+{%- endcapture -%}
+
+{%- assign className = '' -%}
+{%- assign productSuitcase = false -%}
+{% for tag in product.tags %}
+  {%- assign tagName = tag | handleize | downcase -%}
+  {% if tagName == 'monogram_bag' %}
+    {%- assign className = 'text-bag' -%}
+  {% endif %}
+
+  {% if tagName == 'monogram_suitcase' %}
+    {%- assign productSuitcase = true -%}
+  {% endif %}
+{% endfor %}
+
+<div class="monogram__popup" >
+  <h3 class="h2 section-title">Add monogram</h3>
+  <div class="button__close--popup js-close-popup">{% render 'icon-close' %}</div>
+  <div class="monogram__popup--content" data-suitcase="{{ productSuitcase }}">
+    <div class="product__image">
+      {{ product.featured_image | image_url: width: 432 | image_tag:
+        loading: lazy,
+        sizes: sizes,
+        widths: '246, 297, 320, 375, 400, 432, 500, 749, 769, 990'
+      }}
+
+      {% if productSuitcase %}
+        <p class="text {{ className }} font-playful">{{ text_platehoder }}</p>        
+      {% endif %}
+    </div>
+    <div class="monogram__steps">
+      {% unless productSuitcase %}
+        <div class="view__text font-playful">{{ text_platehoder }}</div>        
+      {% endunless %}
+      <div class="step__1">
+        <h4 class="h3">
+          <span class="step__number color-accent-1 gradient">1</span>
+          Choose your font
+        </h4>
+        <div class="font__options">
+          <input id="font-bold" class="visually-hidden" type="radio" value="font-bold" name="properties[Monogram Font]">
+          <label class="button" for="font-bold">Bold</label>
+          <input id="font-classic" class="visually-hidden" type="radio" value="font-classic" name="properties[Monogram Font]">
+          <label class="button" for="font-classic">Classic</label>
+          <input id="font-playful" class="visually-hidden" type="radio" value="font-playful" name="properties[Monogram Font]">
+          <label class="button" for="font-playful">Playful</label>
+          <input id="font-stylish" class="visually-hidden" type="radio" value="font-stylish" name="properties[Monogram Font]">
+          <label class="button" for="font-stylish">Stylish</label>
+          <input id="font-fancy" class="visually-hidden" type="radio" value="font-fancy" name="properties[Monogram Font]">
+          <label class="button" for="font-fancy">Fancy</label>
+        </div>
+        <button class="button button--primary button__next--step">Next</button>
+      </div>
+      <div class="step__2">
+        <h4 class="h3">
+          <span class="step__number color-accent-1 gradient">2</span>
+          Type your text
+        </h4>
+        <div class="field__text-monogram">
+          <input class="field__input monogram" type="text" name="properties[Monogram text]" placeholder="Text" 
+          onkeyup="charcountupdate(this.value)">
+          <div class="charcount__wrap"><span class="charcount">0</span> / <span>30</span></div>
+        </div>
+        <button class="button button--primary button__save">Save</button>
+        <button class="button--under-line button__prev--step">Back</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function charcountupdate(str) {
+    var lng = str.trim();
+    document.querySelector(".monogram__popup .charcount").innerHTML = lng.length;
+  }
+</script>

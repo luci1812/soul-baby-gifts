@@ -1,0 +1,113 @@
+.tab-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 2.4rem;
+}
+
+@media only screen and (max-width: 749px) {
+  .tab-links {
+    gap: 0 1.5rem;
+  }
+}
+
+.tab-links button {
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  background-color: var(--gradient-background);
+  padding-bottom: 1.8rem;
+  border: 0;
+  text-transform: capitalize;
+  width: 31.8rem;
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+}
+
+@media only screen and (max-width: 749px) {
+  .tab-links button {
+    font-size: 1.4rem;
+    line-height: 2.0rem;
+    padding-bottom: 1rem;
+    width: 50%;
+  }                     
+}
+
+.tab-links button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  border-radius: 2px;
+  background-color: var(--color-light-line);
+}
+
+.tab-links button.current::after {
+  height: 4px;
+  border-radius: 4px;
+  background: linear-gradient(135deg, #B4E6F6 0%, #FCBDCB 100%);
+}
+
+.collection-tab {
+  margin-top: 3.2rem;
+  padding: 0;
+  list-style: none;
+}
+
+.collection-tab .card__information {
+  padding-top: 1.6rem;
+  padding-bottom: 0;
+}
+
+.collection-card-wrapper .card__heading a{
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.collection-card-wrapper .card__heading a::after {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.collection-card-wrapper .cart--media {
+  position: relative;
+}
+
+/* .collection-list__item {
+  min-width: 20rem;
+} */
+
+@media only screen and (max-width: 749px) {
+  .collection-tab-wrapper.page-width {
+    /* padding-right: 0;
+    padding-left: 0; */
+  }
+  .collection-tab .card__heading {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  .collection-tab .card__information {
+    padding-top: 0.8rem;
+    padding-bottom: 0;
+  }
+
+  .collection-list__item.flickity-item {
+    min-width: 13.5rem;
+    width: 13.5rem;
+  }
+
+  .collection-tab {
+    margin-top: 2.4rem;
+  }
+}

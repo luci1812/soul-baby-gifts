@@ -1,0 +1,46 @@
+ {% unless cart.empty? %}
+  {%- if settings.cart_shipping_enable -%}
+    {%- assign threshold_in_cents = settings.cart_free_shipping_threshold | times: 100 -%}
+    {%- assign amount_free_shipping = threshold_in_cents | plus: 0.0 -%}
+    {% assign message_process = settings.cart_free_shipping_process %}
+    {% assign message_success = settings.cart_free_shipping_success %}
+
+    <div class="Cart__ShippingNotice">
+      <div class="Cart__Shipping__Container">
+        <div class="cart_freeship_bar">
+          <div class="free_shipping_message">
+            {%- if cart.total_price >= threshold_in_cents -%}
+              {{- message_success -}}
+            {%- else -%}
+              {%- capture remaining_amount -%}<span>{{ cart.total_price | minus: threshold_in_cents | abs | money }}</span>{%- endcapture -%}
+              <p>{{ message_process | replace: '||amount||', remaining_amount | strip_html}}</p>
+            {%- endif -%}
+          </div>
+
+          {%- if threshold_in_cents > cart.total_price -%}
+            {%- assign more_add = amount_free_shipping | minus: cart.total_price -%}
+            {%- assign amount_percent = cart.total_price | divided_by: amount_free_shipping | times: 100 -%}
+          {%- else -%}
+            {%- assign more_add = 0 -%}
+            {%- assign amount_percent = 100 -%}
+          {%- endif -%}
+    
+          <div class="progress">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              aria-valuenow="70"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="width:{{amount_percent}}%"
+            ><span class="hidden">{{amount_percent}}</span></div>
+          </div>
+          <div class="Cart__Shipping_more">
+            <span>{{ 0 | money_without_trailing_zeros }}</span>
+            <span>{{ threshold_in_cents | money_without_trailing_zeros }} = Free Shipping</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  {%- endif -%}
+{% endunless %}

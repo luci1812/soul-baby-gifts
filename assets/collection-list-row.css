@@ -1,0 +1,13 @@
+.collection-row-heading .button { 
+  min-width: auto;
+  padding: 1.6rem 3.2rem ;
+  min-height: auto;
+  text-transform: capitalize;
+}
+
+@media only screen and (min-width: 990px) {
+  .collection-row-heading .button { 
+    min-width: 19.6rem;
+    width: 19.6rem;
+  }
+}

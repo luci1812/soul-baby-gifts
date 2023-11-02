@@ -1,0 +1,111 @@
+.search__input.field__input {
+  padding-right: 9.8rem;
+}
+
+.search__button {
+  right: var(--inputs-border-width);
+  top: var(--inputs-border-width);
+  justify-content: flex-end;
+}
+
+.reset__button {
+  right: calc(var(--inputs-border-width) + 4.4rem);
+  top: var(--inputs-border-width);
+}
+
+.reset__button:not(:focus-visible)::after {
+  border-right: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  display: block;
+  height: calc(100% - 1.6rem);
+  content: unset;
+  position: absolute;
+  right: 0;
+}
+
+.reset__button:not(:focus)::after {
+  border-right: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  display: block;
+  height: calc(100% - 1.8rem);
+  content: unset;
+  position: absolute;
+  right: 0;
+}
+
+.search__button:focus-visible,
+.reset__button:focus-visible {
+  background-color: rgb(var(--color-background));
+  z-index: 4;
+}
+
+.search__button:focus,
+.reset__button:focus {
+  background-color: rgb(var(--color-background));
+  z-index: 4;
+}
+
+.search__button:not(:focus-visible):not(.focused),
+.reset__button:not(:focus-visible):not(.focused) {
+  box-shadow: inherit;
+  background-color: inherit;
+}
+
+.search__button:hover .icon,
+.reset__button:hover .icon {
+  transform: scale(1.07);
+}
+
+.search__button .icon {
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+.reset__button .icon.icon-close {
+  height: 2rem;
+  width: 2rem;
+  stroke-width: 0.1rem;
+}
+
+.template-search .product-grid-container {
+  padding: 2.4rem 0 4.8rem;
+}
+
+.template-search__header .reset__button.field__button {
+  display: block;
+  right: -1rem;
+  top: -1rem;
+}
+
+.template-search__header .predictive-search {
+  padding: 0 2.4rem;
+  top: calc(100% + 0.2rem);
+  width: calc(100% + 4.4rem);
+}
+
+/* Remove extra spacing for search inputs in Safari */
+input::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+@media screen and (min-width: 990px) {  
+  .template-search__header .reset__button.field__button {
+    right: -5.5rem;
+    top: unset;
+  }
+
+}
+
+@media screen and (max-width: 989px) {
+  .template-search__header .search__button {
+    margin-right: 4.4rem;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .search-modal__form .field__input {
+    padding: 0;
+  }
+
+  .template-search__header .predictive-search {
+    width: 100%;
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-build-a-gift",
+      "blocks": {
+        "a2549233-7389-4afe-abfe-61db9fc7eec0": {
+          "type": "gift-step",
+          "settings": {
+            "label": "Choose Your Gift Type",
+            "title": "Choose Your Gift Type",
+            "description": "<p>Welcome fussy gift giver! This is where YOU get to completely build and customise your gift in 5 Easy Peasy steps.<\/p>"
+          }
+        },
+        "c8907798-3d84-48e2-8a72-e13a9a65ea0a": {
+          "type": "gift-step",
+          "settings": {
+            "label": "Choose your packaging",
+            "title": "Choose Your Packaging",
+            "description": "<p>Add items to the drawstring bag or suitcase. Enjoy and have fun shopping!<\/p>"
+          }
+        },
+        "5c5cb72a-e899-4787-97e0-accdb30fe8f5": {
+          "type": "gift-step",
+          "settings": {
+            "label": "Monogram your package",
+            "title": "Monogram Your Package",
+            "description": "<p>Add the name of the baby or the family to the package. We'll monogram it in gold using one of our Signature fonts. Type the baby's name below to see how your Soul Baby gift will look.<\/p>"
+          }
+        },
+        "e0c73e31-3c59-4cd3-bfc7-1ac72956c11b": {
+          "type": "gift-step",
+          "settings": {
+            "label": "Choose your gift items",
+            "title": "Start Choosing Items To Fill Your Gift",
+            "description": "<p>We've selected the perfect items so that you can create a personalised gift full of soul.<\/p>"
+          }
+        },
+        "48e58d19-2cc9-44ac-8350-2527f87118a9": {
+          "type": "gift-step",
+          "settings": {
+            "label": "Add a card message",
+            "title": "Add a Card Message",
+            "description": "<p>Choose the message on your gift card<\/p>"
+          }
+        },
+        "94021a6b-56e1-460c-a1bb-e5e2558ca388": {
+          "type": "gift-type",
+          "settings": {
+            "color_scheme": "accent-1",
+            "title": "Baby Gift",
+            "image": "shopify:\/\/shop_images\/Group_97.png",
+            "collection_packaging": [
+              "soul-baby-gifts-bag",
+              "soul-baby-gifts-suitcase"
+            ],
+            "collection_gift": "collection-fill-your-gift-test"
+          }
+        },
+        "ae431c3c-5e4e-41e8-922a-9af218db177a": {
+          "type": "gift-type",
+          "settings": {
+            "color_scheme": "accent-2",
+            "title": "Gift Hamper",
+            "image": "shopify:\/\/shop_images\/Group_98.png",
+            "collection_packaging": [
+              "hamper-with-soul-gift-bag-test",
+              "soul-baby-gifts-suitcase"
+            ],
+            "collection_gift": "shop-all-the-items"
+          }
+        }
+      },
+      "block_order": [
+        "a2549233-7389-4afe-abfe-61db9fc7eec0",
+        "c8907798-3d84-48e2-8a72-e13a9a65ea0a",
+        "5c5cb72a-e899-4787-97e0-accdb30fe8f5",
+        "e0c73e31-3c59-4cd3-bfc7-1ac72956c11b",
+        "48e58d19-2cc9-44ac-8350-2527f87118a9",
+        "94021a6b-56e1-460c-a1bb-e5e2558ca388",
+        "ae431c3c-5e4e-41e8-922a-9af218db177a"
+      ],
+      "settings": {
+        "color_scheme_banner": "accent-1",
+        "color_scheme": "background-2",
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

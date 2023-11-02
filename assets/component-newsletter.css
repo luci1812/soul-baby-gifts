@@ -1,0 +1,200 @@
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+@media screen and (min-width: 750px) {
+  .newsletter-form {
+    align-items: flex-start;
+    margin: 0 auto;
+  }
+}
+
+.newsletter-form__field-wrapper {
+  width: 100%;
+}
+
+.newsletter-form__field-wrapper .field::before,
+.newsletter-form__field-wrapper .field::after  {
+  content: unset;
+}
+
+.newsletter-form__field-wrapper .field__input {
+  min-height: 6.4rem;
+  background-color: var(--color-white);
+  padding: 2rem 2.4rem;
+  margin: 0;
+}
+
+.newsletter-form__field-wrapper .field__label {
+  top: 2rem;
+  left: 2.4rem;
+  color: var(--color-grey);
+}
+ 
+.newsletter-form__field-wrapper .field {
+  z-index: 0;
+}
+
+.newsletter-form__message {
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.newsletter-form__message--success {
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 750px) {
+  .newsletter-form__message {
+    justify-content: flex-start;
+  }
+}
+
+.newsletter-form__button {
+  width: auto;
+  margin: 0;
+  right: 0.6rem;
+  top: 0.6rem;
+  height: calc(100% - 1.2rem);
+  z-index: 2;
+  background-color: rgb(var(--color-foreground));
+  color: rgb(var(--color-background));
+  border-radius: 10rem;
+  font-weight: bold;
+  padding: 0 3.2rem;
+  transition: color 0.2s, background-color 0.2s;
+  font-size: 1.4rem;
+  font-family: 'GreycliffCF';
+}
+
+.newsletter-form__button:hover {
+  background-color: var(--color-light-line);
+  color: rgb(var(--color-foreground));
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.newsletter-form__button .icon {
+  width: 1.5rem;
+}
+
+@media screen and (max-width: 749px) {
+  .newsletter-form__field-wrapper .field__input {
+    min-height: 5.6rem;
+    padding: 1.8rem 2.4rem;
+    font-size: 1.4rem;
+  }
+
+  .newsletter-form__field-wrapper .field__label {
+    top: 1.6rem;
+    font-size: 1.4rem;
+  }
+
+  .newsletter-form__button {
+    padding: 0;
+    min-width: 14.4rem;
+  }
+}
+
+.newsletter-form__item {
+  position: relative;
+}
+
+.newsletter-form .needsclick {
+  position: unset !important;
+}
+
+.newsletter-form button.kl-private-reset-css-Xuajs1 {
+  position: absolute !important;
+  top: 6px;
+  right: 6px;
+  background-color: var(--color-dark-grey);
+  padding: 0 3.2rem !important;
+}
+
+.newsletter-form button.kl-private-reset-css-Xuajs1:hover {
+  background-color: var(--color-grey);
+  font-family: 'GreycliffCF' !important;
+}
+
+.newsletter-form .klaviyo-form.klaviyo-form.klaviyo-form {
+  width: 100%;
+}
+
+.newsletter-form .go3298969293.go3298969293.go3298969293::after,
+.newsletter-form .go3298969293.go3298969293.go3298969293::before {
+  content: unset !important;
+}
+
+.newsletter-form input.kl-private-reset-css-Xuajs1 {
+  padding-right: 18rem !important;
+  font-family: 'GreycliffCF' !important; 
+}
+
+@media screen and (max-width: 749px) {
+  .newsletter-form input.kl-private-reset-css-Xuajs1 {
+    height: 56px !important;
+    font-size: 1.4rem !important;
+    padding-right: 15rem !important;
+  }
+
+  .newsletter-form button.kl-private-reset-css-Xuajs1 {
+    height: 44px !important;
+    padding: 0 1.6rem !important;
+  }
+
+  .newsletter-form .go3629909467.go3629909467.go3629909467::placeholder {
+    font-size: 1.4rem !important;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .newsletter-form input.kl-private-reset-css-Xuajs1 {
+    padding-right: 13rem !important;
+  }
+}
+
+/* Newsletter popup */
+[aria-label="POPUP Form"] * {
+  font-family: 'GreycliffCF' !important;
+}
+
+
+@media screen and (max-width: 749px) {
+  [aria-label="POPUP Form"] {
+    transform: unset !important;
+    max-height: 100%;
+  }
+
+  [aria-label="POPUP Form"] .klaviyo-form.klaviyo-form.klaviyo-form {
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 0 0 24px !important;
+    width: 100% !important;
+  }  
+
+  [aria-label="POPUP Form"] .klaviyo-form.klaviyo-form.klaviyo-form > *:first-child {
+    max-width: unset !important;
+    width: 100% !important;
+    min-height: 34.5rem!important;
+    background-size: cover !important;
+    margin: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-top-right-radius: 24px;
+    min-width: unset;
+  }
+
+  [aria-label="POPUP Form"] .klaviyo-form.klaviyo-form.klaviyo-form > *:nth-child(2) {
+    padding: 2.4rem 2.4rem 0 !important;
+    min-height: unset !important;
+    box-sizing: border-box;
+  }
+
+  .go3176171171 div > span {
+    font-size: 2rem !important;
+  }
+}

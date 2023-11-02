@@ -1,0 +1,307 @@
+{
+  "sections": {
+    "header": {
+      "type": "main-page-header",
+      "blocks": {
+        "7718755d-4d77-4fbc-bcbf-2ac7c6092d1c": {
+          "type": "heading",
+          "settings": {
+            "heading": "Corporate Baby Gifts",
+            "heading_size": "hxl",
+            "content_alignment": "center",
+            "mobile_content_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 16,
+            "padding_top_mobile": 0,
+            "padding_bottom_mobile": 16
+          }
+        },
+        "aa7dcecc-a396-4734-b2a4-47e6998559cb": {
+          "type": "heading",
+          "settings": {
+            "heading": "With fifteen years of ecommerce gifting experience, we truly understand what customers want and expect from a gifting partner. We are able to provide corporate companies with an extraordinary baby gifting service that is truly unique. We provide a customisable gift service with monogrammed packaging and the ability to build your own, personalised gift. This is elevated gifting for small humans. We can't wait to show you around.",
+            "heading_size": "h3",
+            "content_alignment": "center",
+            "mobile_content_alignment": "left",
+            "padding_top": 0,
+            "padding_bottom": 16,
+            "padding_top_mobile": 0,
+            "padding_bottom_mobile": 16
+          }
+        },
+        "0f325fc6-a012-4adf-9abc-c5708b5f26be": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We have a large scope of corporate baby gifting options that will impress staff and clients and add an extra layer of personalisation to a 'next level' gift. We are happy to curate a range of baby gifts just for you!<\/p>",
+            "text_size": "large",
+            "content_alignment": "center",
+            "mobile_content_alignment": "left",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_top_mobile": 0,
+            "padding_bottom_mobile": 0
+          }
+        }
+      },
+      "block_order": [
+        "7718755d-4d77-4fbc-bcbf-2ac7c6092d1c",
+        "aa7dcecc-a396-4734-b2a4-47e6998559cb",
+        "0f325fc6-a012-4adf-9abc-c5708b5f26be"
+      ],
+      "settings": {
+        "show_page_title": false,
+        "color_scheme": "background-2",
+        "color_scheme_banner": "",
+        "full_width": false,
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "padding_top_mobile": 24,
+        "padding_bottom_mobile": 24
+      }
+    },
+    "main": {
+      "type": "main-page-content",
+      "blocks": {
+        "7afe2a31-1ae4-4151-b93a-afc1091559ff": {
+          "type": "heading",
+          "settings": {
+            "heading": "Choose a Gift",
+            "heading_size": "h1",
+            "content_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 16,
+            "padding_top_mobile": 0,
+            "padding_bottom_mobile": 16
+          }
+        },
+        "5a394b74-5f3d-45c2-adc3-ec5f748513c1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you are in a rush, we have our <a href=\"\/collections\/soul-baby-gift\" target=\"_blank\" title=\"Soul baby gift\">Choose a Gift<\/a> section. We know you’re busy! We have thoughtfully curated an array of baby boy, baby girl and gender-neutral baby and toddler gifts for you to choose from. We also have twin, sleepy-time, baby shower and first birthday gifts to select from within our range.<\/p>",
+            "content_alignment": "left",
+            "padding_top": 0,
+            "padding_bottom": 96,
+            "padding_top_mobile": 0,
+            "padding_bottom_mobile": 32
+          }
+        },
+        "6b0b12eb-c958-4d04-963b-23e39225cad6": {
+          "type": "heading",
+          "settings": {
+            "heading": "Build a Gift",
+            "heading_size": "h1",
+            "content_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 16,
+            "padding_top_mobile": 0,
+            "padding_bottom_mobile": 16
+          }
+        },
+        "81aad534-da8d-49fa-b08d-0676522e1d93": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Welcome, fussy gift giver. Our <a href=\"\/pages\/build-a-gift\" title=\"Build a Gift\">Build a Gift<\/a> feature is perfect when you feel like curating your own gifts and you want to create something different and personal. You can build and customise your Soul Baby Gift in five extremely easy peasy steps. The hardest part is choosing your items!<\/p>",
+            "content_alignment": "left",
+            "padding_top": 0,
+            "padding_bottom": 24,
+            "padding_top_mobile": 0,
+            "padding_bottom_mobile": 32
+          }
+        },
+        "dde20045-f001-47da-9b73-65614ee0d0e1": {
+          "type": "image",
+          "settings": {
+            "push_1_image": "shopify:\/\/shop_images\/Luxury_Baby_Boy_Gifts.png",
+            "push_1_caption": "Luxury Baby Boy Gifts",
+            "push_1_url": "",
+            "push_2_image": "shopify:\/\/shop_images\/Unique_Baby_Girl_Gifts.png",
+            "push_2_caption": "Unique Baby Girl Gifts",
+            "push_2_url": "",
+            "push_3_image": "shopify:\/\/shop_images\/Unisex_Newborn_Baby_Gifts.png",
+            "push_3_caption": "Unisex Newborn Baby Gifts",
+            "push_3_url": "",
+            "content_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 96,
+            "padding_top_mobile": 0,
+            "padding_bottom_mobile": 32
+          }
+        },
+        "926078b1-0d28-4fd0-9914-0cf20cbbd542": {
+          "type": "heading",
+          "settings": {
+            "heading": "Monogrammed Packaging",
+            "heading_size": "h1",
+            "content_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 16,
+            "padding_top_mobile": 0,
+            "padding_bottom_mobile": 16
+          }
+        },
+        "a7162901-ade7-463f-bdd3-4f78f08a8eec": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Personalise your packaging! This is available on all Soul Baby Gifts suitcases and vegan leather drawstring bags. When you place an order, we monogram your packaging as a part of our packing processes. We currently have five fonts available in gold foiling. We have the in-house ability to monogram initials, names or company logos. If you are a corporate and would like your logo on a suitcase or drawstring bag, we can add the appropriate branding for you. When bulk purchasing, we are happy to send you a text message, email or DM you an example of the monogrammed item.<br\/>We need to mention that this service comes at no additional cost. It is completely free of charge with the purchase of a Soul Baby Gifts Suitcase of either size or Gift Bag. You have the option to monogram or not monogram.<\/p>",
+            "content_alignment": "left",
+            "padding_top": 0,
+            "padding_bottom": 24,
+            "padding_top_mobile": 0,
+            "padding_bottom_mobile": 32
+          }
+        },
+        "bc872274-c062-4532-9e4a-05def4148e2a": {
+          "type": "image",
+          "settings": {
+            "push_1_image": "shopify:\/\/shop_images\/Personalised_Keepsake_Suitcase_for_Penelope.png",
+            "push_1_caption": "Personalised Keepsake Suitcase for Penelope",
+            "push_1_url": "",
+            "push_2_image": "shopify:\/\/shop_images\/Personalised_Keepsake_Suitcase_for_Oliver.png",
+            "push_2_caption": "Personalised Keepsake Suitcase for Oliver",
+            "push_2_url": "",
+            "push_3_caption": "",
+            "push_3_url": "",
+            "content_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 48,
+            "padding_top_mobile": 0,
+            "padding_bottom_mobile": 32
+          }
+        },
+        "211bd5f7-1afa-4622-b654-d6498df52776": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We may be biased, but we firmly believe our packaging is the most luxurious baby gift packaging you can get at the moment. We currently have two sizes of vegan leather suitcases: SBG Suitcase for Mini Memories and our SBG Suitcase for Sleepovers. The monogrammed (or non-monogrammed) boxes become fabulous baby keepsakes. They look gorgeous in nurseries and can be used to store toys, treasures, momentos or can later become a gorgeous bag to bring to Nan’s house. These suitcases are available in twilight blue, pastel pink and soft grey.<br\/>We also have our SBG vegan leather drawstring bags in a small and large size. These too can be monogrammed and personalised however you choose. These are very much reusable for organising items in a nappy bag, storing toys and are perfect for travel.<\/p>",
+            "content_alignment": "left",
+            "padding_top": 0,
+            "padding_bottom": 48,
+            "padding_top_mobile": 0,
+            "padding_bottom_mobile": 32
+          }
+        },
+        "da3e5052-cb05-4a9f-829d-3b8d00a6b4b9": {
+          "type": "image",
+          "settings": {
+            "push_1_image": "shopify:\/\/shop_images\/Grey_Bag_for_Big_Adventures.png",
+            "push_1_caption": "",
+            "push_1_url": "",
+            "push_2_image": "shopify:\/\/shop_images\/Grey_Bag_for_Big_Adventures_for_Bilie.png",
+            "push_2_caption": "Grey Bag for Big Adventures for Bilie",
+            "push_2_url": "",
+            "push_3_caption": "",
+            "push_3_url": "",
+            "content_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 96,
+            "padding_top_mobile": 0,
+            "padding_bottom_mobile": 32
+          }
+        },
+        "52a26054-b0f6-4187-8435-c5be3fe2fc88": {
+          "type": "heading",
+          "settings": {
+            "heading": "How to order",
+            "heading_size": "h1",
+            "content_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 16,
+            "padding_top_mobile": 0,
+            "padding_bottom_mobile": 16
+          }
+        },
+        "6e6d15e3-4ebf-464e-b099-ca3073fee548": {
+          "type": "text",
+          "settings": {
+            "text": "<p>These are baby gifts you can order when you want. This can be done online, email or text. However you would like to transact, we are happy to embrace your chosen method of communication. If you’re talkers like us, we would love to hear from you the old school way – over the phone. Motorola style.<\/p>",
+            "content_alignment": "left",
+            "padding_top": 0,
+            "padding_bottom": 96,
+            "padding_top_mobile": 0,
+            "padding_bottom_mobile": 32
+          }
+        },
+        "b25a9da1-9351-4d6b-8951-e71d8dcb06eb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Delivery Options",
+            "heading_size": "h1",
+            "content_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 16,
+            "padding_top_mobile": 0,
+            "padding_bottom_mobile": 16
+          }
+        },
+        "aace4931-9d41-4153-9f4f-cc28a0e9a261": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We currently offer same day delivery within Melbourne and next day delivery Australia wide. We would be happy to discuss delivery options that suit you.<\/p>",
+            "content_alignment": "left",
+            "padding_top": 0,
+            "padding_bottom": 48,
+            "padding_top_mobile": 0,
+            "padding_bottom_mobile": 32
+          }
+        },
+        "d297a76c-5e88-4711-a20d-9019b301667c": {
+          "type": "button",
+          "settings": {
+            "button_label": "Download Our Corporate Baby Gift Brochure",
+            "button_link": "https:\/\/i.emlfiles4.com\/cmpdoc\/4\/2\/5\/5\/3\/2\/files\/814_soul-baby-gifts-corporate-flyer-2019.pdf?utm_campaign=56328_SBG%20EDM%20190901&utm_medium=email&utm_source=Soul%20Baby%20Gifts&dm_t=0,0,0,0,0",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "content_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 48,
+            "padding_top_mobile": 0,
+            "padding_bottom_mobile": 32
+          }
+        },
+        "dd7151e7-7e7b-41d1-8d50-2538084cfe28": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Has your interest been peeked? We would love to have a conversation about how we can help you and truly impress clients and staff. For any further enquires let’s chat on 1300 952 950 or <a href=\"mailto:heybabe@soulbabygifts.com.au\" target=\"_blank\" title=\"mailto:heybabe@soulbabygifts.com.au\">heybabe@soulbabygifts.com.au<\/a><br\/>We are ready to help you create an amazing baby gifting program.<\/p>",
+            "content_alignment": "left",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_top_mobile": 0,
+            "padding_bottom_mobile": 0
+          }
+        }
+      },
+      "block_order": [
+        "7afe2a31-1ae4-4151-b93a-afc1091559ff",
+        "5a394b74-5f3d-45c2-adc3-ec5f748513c1",
+        "6b0b12eb-c958-4d04-963b-23e39225cad6",
+        "81aad534-da8d-49fa-b08d-0676522e1d93",
+        "dde20045-f001-47da-9b73-65614ee0d0e1",
+        "926078b1-0d28-4fd0-9914-0cf20cbbd542",
+        "a7162901-ade7-463f-bdd3-4f78f08a8eec",
+        "bc872274-c062-4532-9e4a-05def4148e2a",
+        "211bd5f7-1afa-4622-b654-d6498df52776",
+        "da3e5052-cb05-4a9f-829d-3b8d00a6b4b9",
+        "52a26054-b0f6-4187-8435-c5be3fe2fc88",
+        "6e6d15e3-4ebf-464e-b099-ca3073fee548",
+        "b25a9da1-9351-4d6b-8951-e71d8dcb06eb",
+        "aace4931-9d41-4153-9f4f-cc28a0e9a261",
+        "d297a76c-5e88-4711-a20d-9019b301667c",
+        "dd7151e7-7e7b-41d1-8d50-2538084cfe28"
+      ],
+      "settings": {
+        "show_page_content": false,
+        "color_scheme": "background-2",
+        "full_width": false,
+        "padding_top": 96,
+        "padding_bottom": 48,
+        "padding_top_mobile": 24,
+        "padding_bottom_mobile": 24
+      }
+    }
+  },
+  "order": [
+    "header",
+    "main"
+  ]
+}

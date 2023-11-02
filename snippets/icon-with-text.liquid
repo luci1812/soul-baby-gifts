@@ -1,0 +1,108 @@
+<style>
+  .icon-with-text__wrap {
+    padding-top: 4.8rem;
+    padding-bottom: 4.8rem;
+  }
+
+  @media screen and (max-width: 749px) {
+    .icon-with-text__wrap {
+      padding-top: 2.8rem;
+      padding-bottom: 2.8rem;
+    } 
+  }
+</style>
+
+<div class="icon-with-text__wrap">
+  <div class="icon-with-text ">
+    <div class="page-width icon-with-text__list">
+        <div class="icon-with-text__item">
+          <div class="icon__img">
+            {%- if block.settings.icon_svg_1 != blank-%}
+              <div class="icon__svg">{{ block.settings.icon_svg_1 }}</div>
+            {%- elsif block.settings.image_1 != blank -%}
+              <img
+                src="{{ block.settings.image_1 | image_url }}"
+                {% if block.settings.image_1.alt != blank %}
+                  alt="{{ block.settings.image_1.alt | escape }}"
+                {% else %}
+                  role="presentation"
+                {% endif %}
+                height="auto"
+                width="auto"
+                loading="lazy"
+              >
+            {%- endif -%}
+          </div>
+          {% if block.settings.title_1 != blank %}
+            <h5 class="paragraph-regular">{{ block.settings.title_1 }}</h5>          
+          {% endif %}
+        </div>
+        <div class="icon-with-text__item">
+        <div class="icon__img">
+            {%- if block.settings.icon_svg_2 != blank-%}
+              <div class="icon__svg">{{ block.settings.icon_svg_2 }}</div>
+            {%- elsif block.settings.image_2 != blank -%}
+              <img
+                src="{{ block.settings.image_2 | image_url }}"
+                {% if block.settings.image_2.alt != blank %}
+                  alt="{{ block.settings.image_2.alt | escape }}"
+                {% else %}
+                  role="presentation"
+                {% endif %}
+                height="auto"
+                width="auto"
+                loading="lazy"
+              >
+            {%- endif -%}
+          </div>
+          {% if block.settings.title_2 != blank %}
+            <h5 class="paragraph-regular">{{ block.settings.title_2 }}</h5>          
+          {% endif %}
+        </div>
+        <div class="icon-with-text__item">
+        <div class="icon__img">
+            {%- if block.settings.icon_svg_3 != blank-%}
+              <div class="icon__svg">{{ block.settings.icon_svg_3 }}</div>
+            {%- elsif block.settings.image_3 != blank -%}
+              <img
+                src="{{ block.settings.image_3 | image_url }}"
+                {% if block.settings.image_3.alt != blank %}
+                  alt="{{ block.settings.image_3.alt | escape }}"
+                {% else %}
+                  role="presentation"
+                {% endif %}
+                height="auto"
+                width="auto"
+                loading="lazy"
+              >
+            {%- endif -%}
+          </div>
+          {% if block.settings.title_3 != blank %}
+            <h5 class="paragraph-regular">{{ block.settings.title_3 }}</h5>          
+          {% endif %}
+        </div>
+        <div class="icon-with-text__item">
+        <div class="icon__img">
+            {%- if block.settings.icon_svg_4 != blank-%}
+              <div class="icon__svg">{{ block.settings.icon_svg_4 }}</div>
+            {%- elsif block.settings.image_4 != blank -%}
+              <img
+                src="{{ block.settings.image_4 | image_url }}"
+                {% if block.settings.image_4.alt != blank %}
+                  alt="{{ block.settings.image_4.alt | escape }}"
+                {% else %}
+                  role="presentation"
+                {% endif %}
+                height="auto"
+                width="auto"
+                loading="lazy"
+              >
+            {%- endif -%}
+          </div>
+          {% if block.settings.title_4 != blank %}
+            <h5 class="paragraph-regular">{{ block.settings.title_4 }}</h5>          
+          {% endif %}
+        </div>
+    </div>
+  </div>
+</div>

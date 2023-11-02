@@ -1,0 +1,155 @@
+{{ 'section-image-banner-block.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px;
+    {% comment %} padding-bottom: {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px; {% endcomment %}
+    padding-bottom: 2.4rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="image-banner-block section-{{ section.id }}-padding">
+  <div class="image-banner-block__list">
+    {% for block in section.blocks %}
+      <div class="image-banner-block__item section-padding-top color-{{ block.settings.color_scheme }} gradient">
+        <div class="banner__content">
+          {% if block.settings.logo != blank and block.settings.heading != blank  %}
+            <span class="banner__content--logo">{{ block.settings.logo }}</span>
+          {% elsif block.settings.logo == blank and block.settings.heading != blank %}
+            <h2 class="hxl">{{ block.settings.heading }}</h2>
+          {% endif %}        
+
+          <div class="banner__content--bottom">
+            {% if block.settings.text != blank %}
+            <div class="paragraph-large">
+              {{ block.settings.text }}
+            </div>             
+            {% endif %}
+
+            {%- if block.settings.button_label != blank -%}
+              <a href="{{ block.settings.link }}" class="button">{{ block.settings.button_label }}</a>
+            {%- endif -%}
+          </div>
+        </div>
+
+        <div class="banner__image">
+          {%- if block.settings.image != blank -%}          
+            {%- assign widths = '352, 360, 375, 479, 535, 750, 990, 1024, 1070, 1440, 1500, 1962' -%}
+            {%- capture sizes -%}
+              (min-width: 750px) 352px, 704px,
+              (max-width: 749px) 162px, 324px
+            {%- endcapture -%}
+            {{
+              block.settings.image
+              | image_url: width: 352
+              | image_tag: loading: 'lazy', sizes: sizes, widths: widths
+            }}
+          {%- else -%}
+            {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+          {%- endif -%}
+        </div>
+      </div>
+
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Image banner block",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:sections.all.padding.section_padding_heading"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 48
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Image banner",
+        "limit": 2,
+        "type": "block",
+        "settings": [
+          {
+            "type": "color_scheme",
+            "id": "color_scheme",
+            "label": "t:sections.all.colors.label",
+            "default": "background-1"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "html",
+            "id": "logo",
+            "label": "Logo"
+          },
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Hampers with Soul."
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Gift shop online & online gift hampers Australia.</p>"
+          },
+          {
+            "type": "text",
+            "id": "button_label",
+            "label": "Button label",
+            "default": "Shop Now"
+          },
+          {
+            "type": "url",
+            "id": "link",
+            "label": "Link"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image banner block",
+        "blocks": [
+          {
+            "type": "block"
+          },
+          {
+            "type": "block"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

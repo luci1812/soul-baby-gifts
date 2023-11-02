@@ -1,0 +1,20 @@
+ <div class="cart-item-price">
+  {%- assign discounted = false -%}
+  {%- if item.original_price > item.final_price -%}
+    {%- assign discounted = true -%}
+  {%- endif -%}
+  {%- assign sale = false -%}
+  {%- if item.variant.compare_at_price > item.price -%}
+    {%- assign sale = true -%}
+  {%- endif -%}
+
+  {%- if discounted -%}
+    <span class="cartItem__price price price--highlight">{{ item.final_price | money_without_trailing_zeros }}</span>
+    <span class="CartItem__Original price price price--compareAt">{{ item.original_price | money_without_trailing_zeros }}</span>
+  {% elsif sale %}
+    <span class="cartItem__price price price--highlight">{{ item.final_price | money_without_trailing_zeros }}</span>
+    <span class="CartItem__Original price price price--compareAt">{{ item.variant.compare_at_price | money_without_trailing_zeros }}</span>
+  {%- else -%}
+    <span class="cartItem__price price">{{ item.final_price | money_without_trailing_zeros }}</span>
+  {%- endif -%}
+</div>

@@ -1,0 +1,28 @@
+.totals {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.totals > * {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.totals > h2, .totals__subtotal-value {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+@media only screen and (max-width: 749px) {
+  .totals > h2, .totals__subtotal-value {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.cart__ctas + .totals {
+  margin-top: 2rem;
+}
+

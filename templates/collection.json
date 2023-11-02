@@ -1,0 +1,43 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_image": false,
+        "color_scheme": "accent-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "color_scheme": "background-2",
+        "products_per_page": 12,
+        "columns_desktop": 4,
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "enable_filtering": true,
+        "enable_filter_category": true,
+        "menu": "category",
+        "enable_sorting": true,
+        "columns_mobile": "1",
+        "image": "shopify:\/\/shop_images\/Rectangle_13_456ad0c1-2f66-44d8-8534-c18ab5fe4e1f.png",
+        "gift_title": "Build a Gift",
+        "gift_content": "<p>Create the most fabulous gifts in 5 Easy Steps with our Build a Gift technology<\/p>",
+        "label": "Build a Gift",
+        "gift_link": "shopify:\/\/pages\/corporate",
+        "show_collection_description": true,
+        "color_scheme_description": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid"
+  ]
+}

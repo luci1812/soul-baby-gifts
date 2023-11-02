@@ -1,0 +1,40 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "color_scheme_banner": "",
+        "color_scheme": "background-2",
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "16958319349422d4cc": {
+      "type": "apps",
+      "blocks": {
+        "73ac4d87-8a3c-4afd-aef9-8dce4e0c6b13": {
+          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "",
+            "widget_type": "reviews_widget"
+          }
+        }
+      },
+      "block_order": [
+        "73ac4d87-8a3c-4afd-aef9-8dce4e0c6b13"
+      ],
+      "settings": {
+        "enable_border": true,
+        "color_scheme_bg": "",
+        "color_scheme": "",
+        "include_margins": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16958319349422d4cc"
+  ]
+}
